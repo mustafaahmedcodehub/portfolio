@@ -1,0 +1,105 @@
+/* Global Styles */
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--lh-h1);
+  letter-spacing: var(--ls-heading);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--text-display);
+  line-height: var(--lh-display);
+}
+
+h2 {
+  font-size: var(--text-h1);
+  line-height: var(--lh-h1);
+}
+
+h3 {
+  font-size: var(--text-h2);
+  line-height: var(--lh-h2);
+}
+
+p {
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+}
+
+a {
+  transition: color var(--duration-fast) ease;
+}
+
+/* Skip Link */
+.u-skip-link,
+.u-visually-hidden {
+  position: absolute;
+  top: -100%;
+  left: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--radius-md);
+  z-index: var(--z-cursor);
+  transition: top var(--duration-fast) ease;
+}
+
+.u-skip-link:focus {
+  top: var(--space-md);
+}
+
+.u-visually-hidden {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.u-visually-hidden:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: var(--space-sm) var(--space-md);
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

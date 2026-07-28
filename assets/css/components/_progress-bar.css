@@ -1,0 +1,61 @@
+/* Progress Bar Component */
+
+.c-progress {
+  margin-bottom: var(--space-xl);
+}
+
+.c-progress__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.c-progress__label {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+
+.c-progress__percentage {
+  font-size: var(--text-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--color-primary);
+}
+
+.c-progress__track {
+  height: 8px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.c-progress__fill {
+  height: 100%;
+  background: var(--gradient-brand);
+  border-radius: var(--radius-full);
+  width: 0;
+  transition: width 1.2s var(--ease-out-expo);
+  position: relative;
+}
+
+.c-progress__fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

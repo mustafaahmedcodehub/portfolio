@@ -1,0 +1,54 @@
+/* Theme Toggle Component */
+
+.c-theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background var(--duration-fast) ease,
+              color var(--duration-fast) ease;
+}
+
+.c-theme-toggle:hover {
+  background: var(--glass-bg);
+  color: var(--color-primary);
+}
+
+.c-theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c-theme-toggle .sun-icon,
+.c-theme-toggle .moon-icon {
+  transition: opacity var(--duration-base) ease,
+              transform var(--duration-base) ease;
+}
+
+.c-theme-toggle .sun-icon {
+  position: absolute;
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.c-theme-toggle .moon-icon {
+  position: absolute;
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+[data-theme="dark"] .c-theme-toggle .sun-icon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+[data-theme="dark"] .c-theme-toggle .moon-icon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}

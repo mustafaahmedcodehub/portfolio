@@ -1,0 +1,26 @@
+/* Scroll Reveal Effects */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity var(--duration-reveal) var(--ease-out-expo),
+              transform var(--duration-reveal) var(--ease-out-expo);
+}
+
+[data-reveal].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Children */
+[data-reveal-stagger] > [data-reveal] {
+  transition-delay: calc(var(--stagger-index, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+  }
+}

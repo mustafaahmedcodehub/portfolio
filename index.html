@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustafa Ahmed | Flutter Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Mustafa Ahmed — Flutter developer building high-performance apps with clean architecture, Firebase, and beautiful UI. Available for hire.">
+  <meta name="author" content="Mustafa Ahmed">
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1B4EF5">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mustafa Ahmed | Flutter Developer & Software Engineer">
+  <meta property="og:description" content="Portfolio of Mustafa Ahmed — Flutter developer building high-performance apps with clean architecture, Firebase, and beautiful UI. Available for hire.">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta property="og:image" content="assets/images/og/og-image.jpg">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mustafa Ahmed | Flutter Developer & Software Engineer">
+  <meta name="twitter:description" content="Portfolio of Mustafa Ahmed — Flutter developer building high-performance apps with clean architecture, Firebase, and beautiful UI. Available for hire.">
+  <meta name="twitter:image" content="assets/images/og/og-image.jpg">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mustafa Ahmed",
+    "jobTitle": "Flutter Developer",
+    "email": "mustafaahmadkasem@gmail.com",
+    "telephone": "01102495288",
+    "url": "https://YOUR-DOMAIN.com/",
+    "sameAs": [
+      "https://www.facebook.com/share/1atE9Py1z5/",
+      "https://www.instagram.com/mustafaahmedkasem",
+      "https://www.linkedin.com/in/mustafa-ahmed-9a77353b4"
+    ],
+    "knowsAbout": ["Flutter", "Dart", "Firebase", "Mobile Development", "Clean Architecture"]
+  }
+  </script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main" class="u-skip-link">Skip to main content</a>
+  
+  <!-- Background -->
+  <div class="c-background" aria-hidden="true">
+    <div class="c-background__mesh"></div>
+    <div class="c-background__orb c-background__orb--1"></div>
+    <div class="c-background__orb c-background__orb--2"></div>
+    <div class="c-background__orb c-background__orb--3"></div>
+    <div class="c-background__shape c-background__shape--1"></div>
+    <div class="c-background__shape c-background__shape--2"></div>
+    <div class="c-background__shape c-background__shape--3"></div>
+    <div class="c-background__vignette"></div>
+  </div>
+  
+  <!-- Navbar -->
+  <header class="c-navbar">
+    <a href="#home" class="c-navbar__logo">Mustafa.</a>
+    
+    <nav class="c-navbar__nav">
+      <a href="#home" class="c-navbar__link">Home</a>
+      <a href="#about" class="c-navbar__link">About</a>
+      <a href="#education" class="c-navbar__link">Education</a>
+      <a href="#experience" class="c-navbar__link">Experience</a>
+      <a href="#skills" class="c-navbar__link">Skills</a>
+      <a href="#projects" class="c-navbar__link">Projects</a>
+      <a href="#testimonials" class="c-navbar__link">Testimonials</a>
+      <a href="#services" class="c-navbar__link">Services</a>
+      <a href="#contact" class="c-navbar__link">Contact</a>
+    </nav>
+    
+    <div class="c-navbar__actions">
+      <button class="c-navbar__theme-toggle c-theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <i data-lucide="moon" class="moon-icon"></i>
+        <i data-lucide="sun" class="sun-icon"></i>
+      </button>
+      
+      <button class="c-navbar__menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <i data-lucide="menu"></i>
+      </button>
+      
+      <a href="#contact" class="c-btn c-btn--primary c-navbar__cta">Hire Me</a>
+    </div>
+  </header>
+  
+  <!-- Mobile Drawer -->
+  <div class="c-drawer-overlay" aria-hidden="true"></div>
+  <aside class="c-drawer" id="mobile-drawer" aria-label="Mobile navigation">
+    <div class="c-drawer__header">
+      <span class="c-drawer__logo">Mustafa.</span>
+      <button class="c-drawer__close" aria-label="Close menu">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    
+    <nav class="c-drawer__nav">
+      <a href="#home" class="c-drawer__link">Home</a>
+      <a href="#about" class="c-drawer__link">About</a>
+      <a href="#education" class="c-drawer__link">Education</a>
+      <a href="#experience" class="c-drawer__link">Experience</a>
+      <a href="#skills" class="c-drawer__link">Skills</a>
+      <a href="#projects" class="c-drawer__link">Projects</a>
+      <a href="#testimonials" class="c-drawer__link">Testimonials</a>
+      <a href="#services" class="c-drawer__link">Services</a>
+      <a href="#contact" class="c-drawer__link">Contact</a>
+    </nav>
+    
+    <div class="c-drawer__social">
+      <a href="https://www.facebook.com/share/1atE9Py1z5/" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/mustafaahmedkasem" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mustafa-ahmed-9a77353b4" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://wa.me/qr/S233W5CHVNNIF1" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i data-lucide="message-circle"></i>
+      </a>
+    </div>
+    
+    <div class="c-drawer__cta">
+      <a href="#contact" class="c-btn c-btn--primary c-btn--full-mobile">Hire Me</a>
+    </div>
+  </aside>
+  
+  <!-- Main Content -->
+  <main id="main" style="position: relative; z-index: var(--z-content);">
+    <!-- Hero Section -->
+    <section id="home" class="l-section l-section--hero s-hero" aria-labelledby="hero-title">
+      <div class="l-container">
+        <div class="l-grid l-grid--hero">
+          <div class="s-hero__content">
+            <p class="s-hero__greeting">Hello, I'm</p>
+            <h1 class="s-hero__name">
+              <span class="s-hero__name--first">Mustafa</span>
+              <span class="s-hero__name--last">Ahmed</span>
+            </h1>
+            <div class="s-hero__typing">
+              <span class="s-hero__typing-text"></span>
+              <span class="s-hero__typing-cursor"></span>
+            </div>
+            <p class="s-hero__description">
+              Flutter developer crafting high-performance mobile applications with clean architecture and expressive UI. Proficient in state management, REST APIs, Firebase integration, and shipping polished cross-platform experiences.
+            </p>
+            <div class="s-hero__buttons">
+              <a href="#contact" class="c-btn c-btn--primary">Hire Me</a>
+              <a href="#projects" class="c-btn c-btn--outline">
+                View Projects
+                <i data-lucide="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="s-hero__image-wrapper" data-parallax="0.08">
+            <div class="s-hero__image-ring"></div>
+            <div class="s-hero__image-ring"></div>
+            <div class="s-hero__image-ring"></div>
+            <img src="assets/ChatGPT Image Jul 28, 2026, 12_02_54 PM.png" alt="Mustafa Ahmed - Flutter Developer" class="s-hero__image" width="420" height="420" loading="eager" fetchpriority="high">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="l-section s-about" aria-labelledby="about-title">
+      <div class="l-container">
+        <div class="s-about__grid">
+          <div class="s-about__left" data-reveal>
+            <h2 id="about-title" class="s-about__title">About Me</h2>
+            <p class="s-about__subtitle">I'm Mustafa Ahmed, Flutter Developer.</p>
+            
+            <a href="assets/files/mustafa-ahmed-cv.pdf" class="c-btn c-btn--ghost" download>
+              <i data-lucide="download"></i>
+              Download CV
+            </a>
+            
+            <div class="s-about__social c-social">
+              <a href="https://www.facebook.com/share/1atE9Py1z5/" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/mustafaahmedkasem" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mustafa-ahmed-9a77353b4" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://wa.me/qr/S233W5CHVNNIF1" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+               <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+            
+            <div class="s-about__info-grid">
+              
+              <div class="c-info-card">
+                <div class="c-info-card__icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <div class="c-info-card__label">Country</div>
+                  <div class="c-info-card__value">Egypt</div>
+                </div>
+              </div>
+              <div class="c-info-card">
+                <div class="c-info-card__icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <div class="c-info-card__label">Email</div>
+                  <div class="c-info-card__value">mustafaahmadkasem@gmail.com</div>
+                </div>
+              </div>
+              <div class="c-info-card">
+                <div class="c-info-card__icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <div class="c-info-card__label">Phone</div>
+                  <div class="c-info-card__value">01102495288</div>
+                </div>
+              </div>
+              <div class="c-info-card">
+                <div class="c-info-card__icon"><i data-lucide="clock"></i></div>
+                <div>
+                  <div class="c-info-card__label">Availability</div>
+                  <div class="c-info-card__value">
+                    <span class="c-badge c-badge--success">
+                      <span class="c-badge__dot c-badge__dot--pulse"></span>
+                      Available
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="s-about__right" data-reveal>
+            <div class="c-glass-card">
+              <p class="s-about__bio">
+                I'm a passionate Flutter Developer with expertise in building high-performance mobile applications. With 8+ completed projects and experience as a freelance instructor, I specialize in clean architecture, state management, and creating beautiful, intuitive user interfaces.
+              </p>
+              <p class="s-about__bio">
+                My journey includes collaborating on programs aligned with Ministry of Communications initiatives, where I've had the opportunity to mentor aspiring developers and share my knowledge of Flutter best practices.
+              </p>
+              <p class="s-about__signature">Mustafa Ahmed</p>
+              
+              <div class="s-about__stats">
+                <div class="c-stat-card" data-reveal-stagger>
+                  
+                  <div class="c-stat-card__number">3+</div>
+                  <div class="c-stat-card__label">Years Experience</div>
+                </div>
+                <div class="c-stat-card" data-reveal-stagger>
+                  <div class="c-stat-card__number">8+</div>
+                  <div class="c-stat-card__label">Projects Done</div>
+                </div>
+                <div class="c-stat-card" data-reveal-stagger>
+                  <div class="c-stat-card__number">4+</div>
+                  <div class="c-stat-card__label">Companies</div>
+                </div>
+                <div class="c-stat-card" data-reveal-stagger>
+                  <div class="c-stat-card__number">Flutter</div>
+                  <div class="c-stat-card__label">Expert</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="l-section s-education" aria-labelledby="education-title">
+      <div class="l-container">
+        <div class="s-education__title-wrapper">
+          <h2 id="education-title" class="u-text-gradient">My Education</h2>
+        </div>
+        
+        <div class="c-glass-card s-education__card" data-reveal>
+          <div class="s-education__icon">
+            <i data-lucide="graduation-cap" size="40"></i>
+          </div>
+          <h3 class="s-education__degree">Bachelor's Degree in Chemistry and Computer Science</h3>
+          <div class="s-education__grade">
+            <i data-lucide="award"></i>
+            Very Good — 3.3 GPA
+          </div>
+          <p class="s-education__description">
+            Interdisciplinary studies bridging scientific reasoning with computing, algorithms, and software development foundations. This unique combination provides a strong analytical foundation for problem-solving in software engineering.
+          </p>
+          <button class="c-btn c-btn--ghost">Student</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="l-section s-experience" aria-labelledby="experience-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <div class="s-experience__title-wrapper">
+            <h2 id="experience-title" class="u-text-gradient">My Experience</h2>
+          </div>
+        </div>
+        
+        <div class="c-timeline" data-reveal-stagger>
+          <div class="c-timeline__item" data-reveal>
+            <div class="c-timeline__dot c-timeline__dot--pulse"></div>
+            <div class="c-timeline__card">
+              <h3 class="c-timeline__title">Flutter Instructor</h3>
+              <div class="c-timeline__org">ATEC</div>
+              <div class="c-timeline__period">2025 – Present</div>
+              <p class="c-timeline__description">
+                Teach Flutter fundamentals, clean architecture, state management, and real-world app patterns to trainees.
+              </p>
+            </div>
+          </div>
+          
+          <div class="c-timeline__item" data-reveal>
+            <div class="c-timeline__dot c-timeline__dot--pulse"></div>
+            <div class="c-timeline__card">
+              <h3 class="c-timeline__title">Flutter Instructor</h3>
+              <div class="c-timeline__org">ADA EGY</div>
+              <div class="c-timeline__period">2025 – Present</div>
+              <p class="c-timeline__description">
+                Deliver hands-on Flutter workshops, mentoring developers on UI polish, APIs, and deployment readiness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="l-section s-skills" aria-labelledby="skills-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <h2 id="skills-title">My Skills</h2>
+        </div>
+        
+        <div class="c-glass-card s-skills__card" data-reveal>
+          <h3>Programming & Concepts</h3>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Dart (OOP)</span>
+              <span class="c-progress__percentage">95%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Data Structures</span>
+              <span class="c-progress__percentage">85%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Problem Solving</span>
+              <span class="c-progress__percentage">90%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Clean Code</span>
+              <span class="c-progress__percentage">95%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">SOLID Principles</span>
+              <span class="c-progress__percentage">88%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Git</span>
+              <span class="c-progress__percentage">85%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+          
+          <div class="c-progress">
+            <div class="c-progress__header">
+              <span class="c-progress__label">Agile Development</span>
+              <span class="c-progress__percentage">80%</span>
+            </div>
+            <div class="c-progress__track">
+              <div class="c-progress__fill" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="l-section s-projects" aria-labelledby="projects-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <h2 id="projects-title">Featured Projects</h2>
+        </div>
+        
+        <div class="s-projects__grid">
+          <div class="c-project-card" data-reveal>
+            <div class="c-project-card__image-wrapper">
+              <img src="assets/news.png" alt="Smart Cess App" class="c-project-card__image" loading="lazy" width="1200" height="750">
+            </div>
+            <div class="c-project-card__content">
+              <h3 class="c-project-card__title">News App</h3>
+              <p class="c-project-card__description">
+                A modern Flutter news application featuring a clean UI, article browsing, search, maps, and category exploration. Built with a focus on smooth performance and intuitive user experience
+              </p>
+              <div class="c-project-card__badges">
+                <span class="c-badge">Flutter</span>
+                <span class="c-badge">Stockfish</span>
+                <span class="c-badge">Raspberry Pi</span>
+              </div>
+              <div class="c-project-card__actions">
+                <a href="#" class="c-btn c-btn--primary" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="c-project-card" data-reveal>
+            <div class="c-project-card__image-wrapper">
+              <img src="assets/ecomerce.png" alt="E-Commerce App" class="c-project-card__image" loading="lazy" width="1200" height="750">
+            </div>
+            <div class="c-project-card__content">
+              <h3 class="c-project-card__title">E-Commerce App</h3>
+              <p class="c-project-card__description">
+                Full shopping flow with authentication, catalog, cart, and cloud backend.
+              </p>
+              <div class="c-project-card__badges">
+                <span class="c-badge">Flutter</span>
+                <span class="c-badge">REST API</span>
+                <span class="c-badge">Firebase</span>
+                <span class="c-badge">Provider</span>
+              </div>
+              <div class="c-project-card__actions">
+                <a href="#" class="c-btn c-btn--primary" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="l-section s-testimonials" aria-labelledby="testimonials-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <div class="s-testimonials__title-wrapper">
+            <h2 id="testimonials-title" class="u-text-gradient">What People Say</h2>
+          </div>
+        </div>
+        
+        <div class="c-slider" data-reveal>
+          <div class="c-slider__viewport">
+            <div class="c-slider__track">
+              <div class="c-slider__slide is-active">
+                <div class="c-slider__stars">
+                  <i data-lucide="star" fill="currentColor"></i>
+                  <i data-lucide="star" fill="currentColor"></i>
+                  <i data-lucide="star" fill="currentColor"></i>
+                  <i data-lucide="star" fill="currentColor"></i>
+                  <i data-lucide="star" fill="currentColor"></i>
+                </div>
+                <p class="c-slider__quote">
+                  "Mustafa is an exceptional Flutter instructor. His teaching style is clear and practical, making complex concepts easy to understand. I've learned so much about clean architecture and state management under his guidance."
+                </p>
+                <img src="assets/images/testimonials/nour-el-din.svg" alt="Nour El-Din" class="c-slider__avatar" loading="lazy" width="80" height="80">
+                <h3 class="c-slider__name">Nour El-Din</h3>
+                <p class="c-slider__title">Training Program Student</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="c-slider__controls">
+            <button class="c-slider__nav-btn c-slider__nav-btn--prev" aria-label="Previous testimonial">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="c-slider__dots">
+              <button class="c-slider__dot is-active" aria-label="Go to slide 1"></button>
+            </div>
+            <button class="c-slider__nav-btn c-slider__nav-btn--next" aria-label="Next testimonial">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="l-section s-services" aria-labelledby="services-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <h2 id="services-title">My Services</h2>
+        </div>
+        
+        <div class="s-services__grid">
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="smartphone" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">Flutter Development</h3>
+            <p class="c-service-card__description">Building beautiful cross-platform mobile applications</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="server" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">Backend Development</h3>
+            <p class="c-service-card__description">Creating robust server-side solutions and APIs</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="palette" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">UI/UX Design</h3>
+            <p class="c-service-card__description">Designing intuitive and engaging user interfaces</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="link" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">API Integration</h3>
+            <p class="c-service-card__description">Seamlessly connecting apps to external services</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="flame" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">Firebase Development</h3>
+            <p class="c-service-card__description">Implementing real-time features and authentication</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="layers" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">State Management</h3>
+            <p class="c-service-card__description">Implementing scalable state solutions</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="zap" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">Performance Optimization</h3>
+            <p class="c-service-card__description">Optimizing apps for speed and efficiency</p>
+          </div>
+          
+          <div class="c-service-card" data-reveal>
+            <div class="c-service-card__icon">
+              <i data-lucide="rocket" size="32"></i>
+            </div>
+            <h3 class="c-service-card__title">App Publishing</h3>
+            <p class="c-service-card__description">Deploying apps to App Store and Play Store</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="l-section s-contact" aria-labelledby="contact-title">
+      <div class="l-container">
+        <div class="l-section__header">
+          <h2 id="contact-title">Get In Touch</h2>
+        </div>
+        
+        <div class="s-contact__grid">
+          <div class="c-contact-card" data-reveal>
+            <div class="c-contact-card__icon">
+              <i data-lucide="message-circle" size="36"></i>
+            </div>
+            <h3 class="c-contact-card__title">WhatsApp</h3>
+            <p class="c-contact-card__description">
+              Let's chat about your project. I'm available for quick discussions and detailed consultations.
+            </p>
+            <a href="https://wa.me/qr/S233W5CHVNNIF1" class="c-btn c-btn--primary" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="send"></i>
+              Message Me
+            </a>
+          </div>
+          
+          <div class="c-contact-card" data-reveal>
+            <div class="c-contact-card__icon">
+              <i data-lucide="mail" size="36"></i>
+            </div>
+            <h3 class="c-contact-card__title">Gmail</h3>
+            <p class="c-contact-card__description">
+              Send me an email for detailed project inquiries, collaboration opportunities, or just to say hello.
+            </p>
+            <a href="mailto:mustafaahmadkasem@gmail.com" class="c-btn c-btn--primary">
+              <i data-lucide="send"></i>
+              Send Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__grid">
+        <div>
+          <div class="c-footer__brand">Mustafa.</div>
+          <p class="c-footer__description">
+            Flutter Developer crafting high-performance mobile applications with clean architecture and beautiful UI.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">Quick Links</h4>
+          <nav class="c-footer__links">
+            <a href="#home" class="c-footer__link">Home</a>
+            <a href="#about" class="c-footer__link">About</a>
+            <a href="#projects" class="c-footer__link">Projects</a>
+            <a href="#contact" class="c-footer__link">Contact</a>
+          </nav>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">Social</h4>
+          <div class="c-social">
+            <a href="https://www.facebook.com/share/1atE9Py1z5/" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/mustafaahmedkasem" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-ahmed-9a77353b4" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/qr/S233W5CHVNNIF1" class="c-social__link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <i data-lucide="message-circle"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="c-footer__title">Contact</h4>
+          <nav class="c-footer__links">
+            <a href="mailto:mustafaahmadkasem@gmail.com" class="c-footer__link">mustafaahmadkasem@gmail.com</a>
+            <a href="tel:01102495288" class="c-footer__link">01102495288</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="c-footer__bottom">
+        <p class="c-footer__copyright">© 2026 Mustafa Ahmed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Back to Top Button -->
+  <button class="c-back-to-top" aria-label="Back to top">
+    <i data-lucide="chevron-up"></i>
+  </button>
+  
+  <!-- JavaScript -->
+  <script type="module" src="assets/js/main.js"></script>
+  
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Grid Layout System */
+
+.l-grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+/* 2 Column Grid */
+.l-grid--2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .l-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3 Column Grid */
+.l-grid--3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .l-grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 4 Column Grid */
+.l-grid--4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .l-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Hero Grid */
+.l-grid--hero {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .l-grid--hero {
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
+/* Auto-fit Grid */
+.l-grid--auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}

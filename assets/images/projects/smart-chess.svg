@@ -1,0 +1,12 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="750" fill="#F5F7FC"/>
+  <rect x="100" y="100" width="1000" height="550" rx="16" fill="#1B4EF5" fill-opacity="0.1"/>
+  <text x="600" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#64748B">Smart Chess Project</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#94A3B8">1200x750px</text>
+  <rect x="200" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+  <rect x="320" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+  <rect x="440" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+  <rect x="560" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+  <rect x="680" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+  <rect x="800" y="450" width="100" height="100" rx="8" fill="#1B4EF5" fill-opacity="0.2"/>
+</svg>

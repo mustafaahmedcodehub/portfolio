@@ -1,0 +1,31 @@
+/* Root Variables & Theme Setup */
+
+@import '../tokens/_colors.css';
+@import '../tokens/_typography.css';
+@import '../tokens/_spacing.css';
+@import '../tokens/_breakpoints.css';
+@import '../tokens/_shadows.css';
+@import '../tokens/_radii.css';
+@import '../tokens/_motion.css';
+
+:root {
+  /* Default theme - respects system preference */
+  color-scheme: light dark;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+/* Theme attribute set by JS */
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}

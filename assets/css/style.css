@@ -1,0 +1,54 @@
+/* Main CSS - Imports all modules */
+
+/* Base (includes tokens via _root.css) */
+@import './base/_reset.css';
+@import './base/_root.css';
+@import './base/_globals.css';
+
+/* Themes */
+@import './themes/_light.css';
+@import './themes/_dark.css';
+
+/* Layout */
+@import './layout/_container.css';
+@import './layout/_grid.css';
+@import './layout/_section.css';
+
+/* Components */
+@import './components/_navbar.css';
+@import './components/_mobile-drawer.css';
+@import './components/_buttons.css';
+@import './components/_cards.css';
+@import './components/_glass-card.css';
+@import './components/_badges.css';
+@import './components/_timeline.css';
+@import './components/_progress-bar.css';
+@import './components/_slider.css';
+@import './components/_wave-divider.css';
+@import './components/_social-icons.css';
+@import './components/_footer.css';
+@import './components/_back-to-top.css';
+@import './components/_theme-toggle.css';
+@import './components/_cursor-effects.css';
+
+/* Sections */
+@import './sections/_hero.css';
+@import './sections/_about.css';
+@import './sections/_education.css';
+@import './sections/_experience.css';
+@import './sections/_skills.css';
+@import './sections/_projects.css';
+@import './sections/_testimonials.css';
+@import './sections/_services.css';
+@import './sections/_contact.css';
+
+/* Effects */
+@import './effects/_background.css';
+@import './effects/_particles.css';
+@import './effects/_parallax.css';
+@import './effects/_scroll-reveal.css';
+
+/* Utilities */
+@import './utilities/_visually-hidden.css';
+@import './utilities/_text-gradient.css';
+@import './utilities/_glow.css';

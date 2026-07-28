@@ -1,0 +1,11 @@
+/* Parallax Effects */
+
+[data-parallax] {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-parallax] {
+    will-change: auto;
+  }
+}

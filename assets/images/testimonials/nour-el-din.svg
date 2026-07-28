@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="#1B4EF5" fill-opacity="0.1"/>
+  <circle cx="100" cy="70" r="35" fill="#1B4EF5" fill-opacity="0.3"/>
+  <path d="M50 160C50 125 70 100 100 100C130 100 150 125 150 160" stroke="#1B4EF5" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <text x="100" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Nour El-Din</text>
+</svg>

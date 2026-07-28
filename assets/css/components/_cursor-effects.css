@@ -1,0 +1,68 @@
+/* Custom Cursor Effects */
+
+.c-custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--duration-fast) ease,
+              transform var(--duration-fast) ease;
+}
+
+@media (pointer: coarse) {
+  .c-custom-cursor {
+    display: none;
+  }
+}
+
+.c-custom-cursor.is-active {
+  opacity: 1;
+}
+
+.c-custom-cursor__ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-primary);
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--duration-fast) ease,
+              transform var(--duration-fast) ease,
+              width var(--duration-base) var(--ease-out-expo),
+              height var(--duration-base) var(--ease-out-expo);
+}
+
+@media (pointer: coarse) {
+  .c-custom-cursor__ring {
+    display: none;
+  }
+}
+
+.c-custom-cursor__ring.is-active {
+  opacity: 0.5;
+}
+
+.c-custom-cursor__ring.is-hovering {
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-custom-cursor,
+  .c-custom-cursor__ring {
+    display: none;
+  }
+}

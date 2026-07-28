@@ -1,0 +1,32 @@
+/* Back to Top Button */
+
+.c-back-to-top {
+  position: fixed;
+  bottom: var(--space-xl);
+  right: var(--space-xl);
+  z-index: var(--z-back-to-top);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-brand-soft);
+  color: white;
+  box-shadow: var(--shadow-glow-primary);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--duration-base) var(--ease-out-expo);
+}
+
+.c-back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.c-back-to-top:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 32px rgba(27, 78, 245, 0.6);
+}

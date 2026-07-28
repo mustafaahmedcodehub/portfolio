@@ -1,0 +1,42 @@
+/* Particle Effects */
+
+.c-particles {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-background);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.c-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  opacity: 0.3;
+  animation: particle-float 25s linear infinite;
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(100px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-particle {
+    animation: none;
+  }
+}

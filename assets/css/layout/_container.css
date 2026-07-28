@@ -1,0 +1,35 @@
+/* Container Layout */
+
+.l-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-lg);
+  padding-right: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .l-container {
+    max-width: var(--container-tablet);
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .l-container {
+    max-width: var(--container-laptop);
+  }
+}
+
+@media (min-width: 1280px) {
+  .l-container {
+    max-width: var(--container-desktop);
+  }
+}
+
+@media (min-width: 1536px) {
+  .l-container {
+    max-width: var(--container-ultra);
+  }
+}

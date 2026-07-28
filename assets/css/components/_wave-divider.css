@@ -1,0 +1,36 @@
+/* Wave Divider Component */
+
+.c-wave {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-wave svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c-wave path {
+  fill: var(--color-bg);
+  animation: wave-shift 10s linear infinite;
+}
+
+@keyframes wave-shift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .c-wave path {
+    animation: none;
+  }
+}

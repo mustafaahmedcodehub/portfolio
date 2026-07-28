@@ -1,0 +1,16 @@
+/* Breakpoint Tokens */
+
+:root {
+  --bp-mobile: 0;
+  --bp-tablet: 640px;
+  --bp-laptop: 1024px;
+  --bp-desktop: 1280px;
+  --bp-ultra: 1536px;
+
+  /* Container Max Widths */
+  --container-mobile: 100%;
+  --container-tablet: 640px;
+  --container-laptop: 1024px;
+  --container-desktop: 1200px;
+  --container-ultra: 1320px;
+}

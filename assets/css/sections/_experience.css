@@ -1,0 +1,20 @@
+/* Experience Section */
+
+.s-experience__title-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.s-experience__title-wrapper::before,
+.s-experience__title-wrapper::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background: var(--gradient-brand);
+  opacity: 0.3;
+  max-width: 200px;
+}
