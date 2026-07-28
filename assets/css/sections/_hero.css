@@ -187,3 +187,32 @@
     }
 
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .s-hero__image-wrapper {
+    width: min(85vw, 320px);
+    height: min(85vw, 320px);
+  }
+
+  .s-hero__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .s-hero__image-wrapper::before {
+    width: 335px;
+    height: 335px;
+  }
+
+  .s-hero__image-wrapper::after {
+    width: 350px;
+    height: 350px;
+  }
+
+  .s-hero__buttons {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
