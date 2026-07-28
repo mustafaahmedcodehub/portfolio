@@ -9,9 +9,9 @@ export const initTheme = () => {
   
   // Get saved theme or system preference
   const savedTheme = localStorage.getItem(STORAGE_THEME_KEY);
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
-  const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+// اجعل الوضع الافتراضي Dark دائماً
+const initialTheme = savedTheme || 'dark';
   setTheme(initialTheme);
   
   // Toggle theme on button click
